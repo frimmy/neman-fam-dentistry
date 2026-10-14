@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Neman Family Dentistry</title>
+    <meta
+      name="description"
+      content="Contact Neman Family Dentistry. Two locations in Great Neck and Forest Hills, NY. Call or send us a message."
+    />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect width='48' height='48' rx='10' fill='%230d0f0e'/%3E%3Cpath d='M24 11c-4 6-6 9-6 14a6 6 0 0 0 12 0c0-5-2-8-6-14Z' fill='%23d8b36e'/%3E%3C/svg%3E"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body data-page="contact">
+    <div id="header-mount"></div>
+
+    <main>
+      <section class="page-hero">
+        <div class="wrap">
+          <span class="kicker" data-content="contact.kicker"></span>
+          <h1 data-content="contact.heading"></h1>
+          <p data-content="contact.subhead"></p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="wrap">
+          <div class="split" style="align-items: start">
+            <div class="card reveal" style="padding: 34px">
+              <form id="contact-form" novalidate>
+                <div class="form-grid">
+                  <div class="field" data-field>
+                    <label for="ct-name">Full name</label>
+                    <input id="ct-name" name="name" autocomplete="name" required />
+                    <span class="err">Please enter your name.</span>
+                  </div>
+                  <div class="field" data-field>
+                    <label for="ct-email">Email</label>
+                    <input id="ct-email" name="email" type="email" autocomplete="email" required />
+                    <span class="err">Please enter a valid email.</span>
+                  </div>
+                </div>
+                <div class="field" data-field>
+                  <label for="ct-phone">Phone (optional)</label>
+                  <input id="ct-phone" name="phone" inputmode="tel" />
+                </div>
+                <div class="field" data-field>
+                  <label for="ct-message">How can we help?</label>
+                  <textarea id="ct-message" name="message" required></textarea>
+                  <span class="err">Please add a short message.</span>
+                </div>
+                <button class="btn" type="submit" style="width: 100%">Send message</button>
+                <p class="form-note">Demo form — messages are not sent anywhere.</p>
+                <div class="form-success" id="contact-success">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5" /></svg>
+                  <div><strong>Thanks — message received.</strong><br />We would reply within one business day.</div>
+                </div>
+              </form>
+            </div>
+
+            <div class="reveal">
+              <div class="grid" data-render="locations"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div id="footer-mount"></div>
+    <script src="content.js"></script>
+    <script src="js/main.js" defer></script>
+  </body>
+</html>

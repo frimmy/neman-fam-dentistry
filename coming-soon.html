@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coming Soon | Neman Family Dentistry</title>
+    <meta name="description" content="This section is coming soon." />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect width='48' height='48' rx='10' fill='%230d0f0e'/%3E%3Cpath d='M24 11c-4 6-6 9-6 14a6 6 0 0 0 12 0c0-5-2-8-6-14Z' fill='%23d8b36e'/%3E%3C/svg%3E"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body data-page="">
+    <div id="header-mount"></div>
+
+    <main>
+      <section class="section">
+        <div class="wrap">
+          <div class="stub">
+            <span class="badge">Coming soon</span>
+            <h1 id="stub-title">This page is on the way</h1>
+            <p>
+              This section of the demo isn't built out yet — but on the real
+              site it would live right here. Meanwhile, explore the pages that
+              are ready, or request a visit.
+            </p>
+            <div style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap">
+              <a class="btn" href="index.html">Back to home</a>
+              <a class="btn btn-ghost" href="#book" data-book>
+                <span data-content="cta.book"></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div id="footer-mount"></div>
+    <script src="content.js"></script>
+    <script src="js/main.js" defer></script>
+    <script>
+      (function () {
+        var t = new URLSearchParams(location.search).get("t");
+        if (t) {
+          var h = document.getElementById("stub-title");
+          var safe = t.replace(/[<>]/g, "");
+          if (h) h.textContent = safe + " — coming soon";
+          document.title = safe + " | Neman Family Dentistry";
+        }
+      })();
+    </script>
+  </body>
+</html>

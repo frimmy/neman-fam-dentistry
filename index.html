@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Neman Family Dentistry | Great Neck & Forest Hills, NY</title>
+    <meta
+      name="description"
+      content="Comprehensive and cosmetic dentistry for the whole family in Great Neck and Forest Hills, NY. Implants, veneers, whitening, and smile makeovers. New patients welcome."
+    />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect width='48' height='48' rx='10' fill='%230d0f0e'/%3E%3Cpath d='M24 11c-4 6-6 9-6 14a6 6 0 0 0 12 0c0-5-2-8-6-14Z' fill='%23d8b36e'/%3E%3C/svg%3E"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body data-page="home">
+    <div id="header-mount"></div>
+
+    <main>
+      <section class="hero">
+        <div class="wrap">
+          <div class="hero-copy">
+            <span class="kicker hero-kicker" data-content="heroKicker"></span>
+            <h1 data-content="heroHeadline"></h1>
+            <p class="lead" data-content="heroSubhead"></p>
+            <div class="hero-cta">
+              <a class="btn" href="#book" data-book>
+                <span data-content="cta.bookLong"></span>
+              </a>
+              <a class="btn btn-light" href="about.html">Meet the Team</a>
+            </div>
+            <p class="hero-tag" data-content="tagline"></p>
+          </div>
+          <aside class="hero-card">
+            <h3>Two convenient locations</h3>
+            <div data-render="hero-locations"></div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section" id="services">
+        <div class="wrap">
+          <div class="section-head reveal">
+            <span class="kicker" data-content="services.kicker"></span>
+            <h2 data-content="services.heading"></h2>
+            <p class="subhead" data-content="services.subhead"></p>
+          </div>
+          <div class="grid grid-3" data-render="services"></div>
+        </div>
+      </section>
+
+      <section class="section" style="padding-top: 0">
+        <div class="wrap">
+          <div class="split">
+            <div class="reveal">
+              <span class="kicker" data-content="intro.kicker"></span>
+              <h2 data-content="intro.heading"></h2>
+              <p data-content="intro.body"></p>
+              <div class="stats">
+                <div class="stat">
+                  <div class="num" data-content="about.stats.0.value"></div>
+                  <div class="lbl" data-content="about.stats.0.label"></div>
+                </div>
+                <div class="stat">
+                  <div class="num" data-content="about.stats.1.value"></div>
+                  <div class="lbl" data-content="about.stats.1.label"></div>
+                </div>
+                <div class="stat">
+                  <div class="num" data-content="about.stats.2.value"></div>
+                  <div class="lbl" data-content="about.stats.2.label"></div>
+                </div>
+              </div>
+              <div style="margin-top: 32px">
+                <a class="btn btn-ghost" href="about.html">About the practice</a>
+              </div>
+            </div>
+            <div class="panel reveal" aria-hidden="true">
+              <svg viewBox="0 0 220 220" fill="none" width="200" height="200">
+                <circle cx="110" cy="110" r="96" stroke="var(--gold)" stroke-opacity=".3" stroke-width="2" />
+                <circle cx="110" cy="110" r="70" stroke="var(--gold)" stroke-opacity=".5" stroke-width="2" stroke-dasharray="4 8" />
+                <path d="M110 58c-14 20-21 31-21 48a21 21 0 0 0 42 0c0-17-7-28-21-48Z" fill="var(--gold)" />
+                <path d="M96 128v26M124 128v26" stroke="var(--gold)" stroke-width="7" stroke-linecap="round" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" style="padding-top: 0">
+        <div class="wrap">
+          <div class="section-head reveal">
+            <span class="kicker" data-content="testimonials.kicker"></span>
+            <h2 data-content="testimonials.heading"></h2>
+            <p class="subhead" data-content="testimonials.subhead"></p>
+          </div>
+          <div class="grid grid-2" data-render="testimonials"></div>
+        </div>
+      </section>
+
+      <section class="section" style="padding-top: 0">
+        <div class="wrap">
+          <div class="band reveal">
+            <span class="kicker hero-kicker" data-content="savings.kicker"></span>
+            <h2 data-content="savings.heading"></h2>
+            <p data-content="savings.body"></p>
+            <a class="btn" href="#book" data-book>
+              <span data-content="cta.book"></span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" style="padding-top: 0" id="locations">
+        <div class="wrap">
+          <div class="section-head reveal">
+            <span class="kicker" data-content="locations.kicker"></span>
+            <h2 data-content="locations.heading"></h2>
+          </div>
+          <div class="grid grid-2" data-render="locations"></div>
+        </div>
+      </section>
+    </main>
+
+    <div id="footer-mount"></div>
+    <script src="content.js"></script>
+    <script src="js/main.js" defer></script>
+  </body>
+</html>

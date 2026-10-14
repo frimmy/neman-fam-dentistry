@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About & Our Team | Neman Family Dentistry</title>
+    <meta
+      name="description"
+      content="Meet Dr. Nahid Neman and Dr. Jonathan Neman and learn about Neman Family Dentistry, serving Great Neck and Forest Hills, NY."
+    />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect width='48' height='48' rx='10' fill='%230d0f0e'/%3E%3Cpath d='M24 11c-4 6-6 9-6 14a6 6 0 0 0 12 0c0-5-2-8-6-14Z' fill='%23d8b36e'/%3E%3C/svg%3E"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body data-page="about">
+    <div id="header-mount"></div>
+
+    <main>
+      <section class="page-hero">
+        <div class="wrap">
+          <span class="kicker" data-content="about.kicker"></span>
+          <h1 data-content="about.heading"></h1>
+          <p data-content="about.body"></p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="wrap">
+          <div class="split">
+            <div class="reveal">
+              <span class="kicker" data-content="intro.kicker"></span>
+              <h2 data-content="intro.heading"></h2>
+              <p data-content="intro.body"></p>
+              <div class="stats">
+                <div class="stat">
+                  <div class="num" data-content="about.stats.0.value"></div>
+                  <div class="lbl" data-content="about.stats.0.label"></div>
+                </div>
+                <div class="stat">
+                  <div class="num" data-content="about.stats.1.value"></div>
+                  <div class="lbl" data-content="about.stats.1.label"></div>
+                </div>
+                <div class="stat">
+                  <div class="num" data-content="about.stats.2.value"></div>
+                  <div class="lbl" data-content="about.stats.2.label"></div>
+                </div>
+              </div>
+            </div>
+            <div class="panel reveal" aria-hidden="true">
+              <svg viewBox="0 0 220 220" fill="none" width="200" height="200">
+                <circle cx="110" cy="110" r="96" stroke="var(--gold)" stroke-opacity=".3" stroke-width="2" />
+                <path d="M62 150c10-16 28-26 48-26s38 10 48 26" stroke="var(--gold)" stroke-width="3" stroke-linecap="round" />
+                <circle cx="110" cy="92" r="26" stroke="var(--gold)" stroke-width="3" />
+                <path d="M110 70c-7 10-11 16-11 24a11 11 0 0 0 22 0c0-8-4-14-11-24Z" fill="var(--gold)" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" style="padding-top: 0">
+        <div class="wrap">
+          <div class="section-head reveal">
+            <span class="kicker" data-content="team.kicker"></span>
+            <h2 data-content="team.heading"></h2>
+            <p class="subhead" data-content="team.subhead"></p>
+          </div>
+          <div class="grid grid-2" data-render="team"></div>
+        </div>
+      </section>
+
+      <section class="section" style="padding-top: 0">
+        <div class="wrap">
+          <div class="band reveal">
+            <h2>Ready when you are</h2>
+            <p data-content="heroSubhead"></p>
+            <a class="btn" href="#book" data-book>
+              <span data-content="cta.bookLong"></span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div id="footer-mount"></div>
+    <script src="content.js"></script>
+    <script src="js/main.js" defer></script>
+  </body>
+</html>
