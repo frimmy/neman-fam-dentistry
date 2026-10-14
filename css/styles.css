@@ -38,8 +38,13 @@
   --font-body: "Clarity City", -apple-system, BlinkMacSystemFont, "Segoe UI",
     sans-serif;
 
-  --gold: #b8903c;
-  --emerald: #1f6b4d;
+  /* Brand palette carried over from nemanfamilydentistry.com (navy/sky/green). */
+  --brand-navy-deep: #171f3b;
+  --brand-navy: #29336f;
+  --brand-sky: #3eabe2;
+  --brand-green: #50a539;
+  --cta: #43922d;
+  --cta-bright: #50a539;
 
   --radius: 14px;
   --radius-lg: 24px;
@@ -50,50 +55,50 @@
   --ease: cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-/* Light (warm ivory) — default when no explicit theme and system is light. */
+/* Light — default when no explicit theme and system is light. */
 :root,
 :root[data-theme="light"] {
-  --bg: #f6f1e7;
-  --bg-elev: #fffdf8;
+  --bg: #eef1f6;
+  --bg-elev: #ffffff;
   --surface: #ffffff;
-  --surface-2: #f1ead9;
-  --text: #1b1e1b;
-  --text-muted: #5f6158;
-  --border: rgba(27, 30, 27, 0.12);
-  --gold: #9c7626;
-  --gold-bright: #b8903c;
-  --emerald: #1f6b4d;
-  --ring: rgba(156, 118, 38, 0.35);
+  --surface-2: #e5ebf3;
+  --text: #171f3b;
+  --text-muted: #58607a;
+  --border: rgba(23, 31, 59, 0.14);
+  --gold: #1f78c2;
+  --gold-bright: #2b85d4;
+  --emerald: #3f8f2c;
+  --ring: rgba(31, 120, 194, 0.35);
 }
 
 /* Dark (signature). */
 :root[data-theme="dark"] {
-  --bg: #0d0f0e;
-  --bg-elev: #141816;
-  --surface: #1a201d;
-  --surface-2: #10140f;
-  --text: #f4efe3;
-  --text-muted: #b2ad9f;
+  --bg: #0f1428;
+  --bg-elev: #171f3b;
+  --surface: #1e274a;
+  --surface-2: #121833;
+  --text: #eef1f8;
+  --text-muted: #a7b0c6;
   --border: rgba(255, 255, 255, 0.1);
-  --gold: #d8b36e;
-  --gold-bright: #ecca8a;
-  --emerald: #3f9a73;
-  --ring: rgba(216, 179, 110, 0.4);
+  --gold: #4fb3e6;
+  --gold-bright: #7cc8ee;
+  --emerald: #57b53f;
+  --ring: rgba(79, 179, 230, 0.4);
 }
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --bg: #0d0f0e;
-    --bg-elev: #141816;
-    --surface: #1a201d;
-    --surface-2: #10140f;
-    --text: #f4efe3;
-    --text-muted: #b2ad9f;
+    --bg: #0f1428;
+    --bg-elev: #171f3b;
+    --surface: #1e274a;
+    --surface-2: #121833;
+    --text: #eef1f8;
+    --text-muted: #a7b0c6;
     --border: rgba(255, 255, 255, 0.1);
-    --gold: #d8b36e;
-    --gold-bright: #ecca8a;
-    --emerald: #3f9a73;
-    --ring: rgba(216, 179, 110, 0.4);
+    --gold: #4fb3e6;
+    --gold-bright: #7cc8ee;
+    --emerald: #57b53f;
+    --ring: rgba(79, 179, 230, 0.4);
   }
 }
 
@@ -192,8 +197,8 @@ img {
 
 /* ---------- Buttons ---------- */
 .btn {
-  --btn-bg: var(--gold);
-  --btn-fg: #15120a;
+  --btn-bg: var(--cta);
+  --btn-fg: #ffffff;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -214,7 +219,7 @@ img {
 }
 .btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 14px 30px -14px var(--gold);
+  box-shadow: 0 14px 30px -14px var(--cta);
 }
 .btn:focus-visible {
   outline: none;
@@ -348,12 +353,12 @@ img {
   overflow: hidden;
   background: radial-gradient(
       120% 120% at 85% 10%,
-      rgba(63, 154, 115, 0.22),
+      rgba(62, 171, 226, 0.26),
       transparent 55%
     ),
-    radial-gradient(90% 90% at 10% 100%, rgba(216, 179, 110, 0.16), transparent 60%),
-    #0b0d0c;
-  color: #f4efe3;
+    radial-gradient(90% 90% at 10% 100%, rgba(80, 165, 57, 0.18), transparent 60%),
+    #141b36;
+  color: #eef1f8;
 }
 .hero::after {
   content: "";
@@ -648,7 +653,7 @@ img {
 
 /* ---------- Band / CTA ---------- */
 .band {
-  background: linear-gradient(135deg, var(--emerald), #0f3d2c);
+  background: linear-gradient(135deg, var(--brand-navy), var(--brand-navy-deep));
   color: #f4efe3;
   border-radius: var(--radius-lg);
   padding: clamp(40px, 6vw, 70px);
@@ -952,8 +957,8 @@ body.editing .edit-bar .dot {
   border-color: var(--gold);
 }
 .edit-bar button.primary {
-  background: var(--gold);
-  color: #15120a;
+  background: var(--cta);
+  color: #ffffff;
   border-color: transparent;
 }
 .edit-bar button.hidden {
