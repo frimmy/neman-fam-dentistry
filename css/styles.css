@@ -245,6 +245,8 @@ img {
 }
 
 /* ---------- Header / nav ---------- */
+/* sticky needs body as the containing block, not the short mount wrapper */
+#header-mount { display: contents; }
 .site-header {
   position: sticky;
   top: 0;
